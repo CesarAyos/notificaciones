@@ -1,0 +1,125 @@
+.material-icons{
+    font-family: "material Icons";
+    font-weight: normal;
+    font-style: normal;
+    font-size: 58px;
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+.notification{
+    width: 50px;
+    margin: 100px auto;
+
+    animation: ring 4s 0.7s ease-in-out infinite;
+    transform-origin: 50px 10px;
+}
+
+.notification .count {
+    --size: 30px;
+    font-size: 12px;
+    font-weight: bold;
+    background-color: red;
+    color: white;
+    border: solid 2px white;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: var( --size);
+    height: var( --size);
+    max-width: var( --size);
+    max-width: var( --size);
+    box-sizing: border-box;
+    position: relative;
+    border-radius: 50px;
+    top: 20px;
+    left: 10px;
+}
+
+@keyframes ring {
+    0%{
+        transform: rotate(0deg);
+    }
+    1%{
+        transform: rotate(65deg);
+    }
+    3%{
+        transform: rotate(-65deg);
+    }
+    5%{
+        transform: rotate(70deg);
+    }
+    7%{
+        transform: rotate(-70deg);
+    }
+    9%{
+        transform: rotate(65deg);
+    }
+    11%{
+        transform: rotate(-60deg);
+    }
+    13%{
+        transform: rotate(60deg);
+    }
+    15%{
+        transform: rotate(-55deg);
+    }
+    17%{
+        transform: rotate(60deg);
+    }
+    19%{
+        transform: rotate(-50deg);
+    }
+    17%{
+        transform: rotate(45deg);
+    }
+    17%{
+        transform: rotate(-40deg);
+    }
+
+    19%{
+        transform: rotate(-20deg);
+    }
+
+    21%{
+        transform: rotate(15deg);
+    }
+
+    23%{
+        transform: rotate(-10deg);
+    }
+
+    25%{
+        transform: rotate(10deg);
+    }
+    27%{
+        transform: rotate(-5deg);
+    }
+    29%{
+        transform: rotate(5deg);
+    }
+    29%{
+        transform: rotate(-1deg);
+    }
+    29%{
+        transform: rotate(1deg);
+    }
+    31%{
+        transform: rotate(0deg);
+    }
+
+    100%{
+        transform: rotate(0);
+    }
+}
